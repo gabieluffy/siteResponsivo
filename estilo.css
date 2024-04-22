@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display= trocar');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lexend Deca', sans-serif ;
+}
+body{
+  background-color: #FFF0F5;  
+  min-height: 100hv;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+nav{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center ;
+    height: 100px;
+}
+nav .menu-icon{
+  cursor: pointer;
+  display: none ;  
+}
+nav .logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFC0CB ;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+  padding: 0 15px;   
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color:#FFC0CB
+}
+main{
+ margin-top: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.text-bx {
+width: 40%;
+}
+.text-bx h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.text-bx h1{
+    color: #FFC0CB;
+}
+.text-bx p{
+   color: black; 
+   font-weight: 400;
+   margin-top: 20px;
+}
+.img-bx{
+    width: 60% ;
+}
+.img-bx img{
+    width: 100%;
+}
+@media (max-width:970px) {
+    nav .menu-icon{
+display: block;
+}
+ nav ul{
+position: fixed;
+width: 60%;
+height: 100%;
+top: 0;
+left: 0;
+transform: translateX(-100%);
+display: flex ;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+transition: 0.3s ease-in;
+background-color:#FFF0F5 ;
+ }
+ nav ul.active{
+    transform: translateX(0);
+ }
+ nav ul li{
+    padding: 10px;
+ }
+ nav ul li a{
+    font-size: 18px ;
+    color: #FFC0CB;
+ }
+ main {
+    flex-direction: column;
+ }
+
+.text-bx,
+.img-bx{
+ width: 100%;   
+ text-align: center;
+}
+.text-bx{
+    margin-bottom: 40px;
+}
+}
+
+/*Página 2*/
+.hobi{
+ width: 30%
+}
+.hobi h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.hobi h1{
+    color: #FFC0CB;
+}
+.hobi p{
+    font-size: 20px
+}
+.hp {
+    min-width: 200px; 
+    max-height: 500px;
+
+}
+
+/*Página 3*/
+
+
+.carreira {
+
+    display: block;
+    line-height: 1.5;
+}
+      
+  
+  
+  .carreira h2 {
+    color: #FFC0CB; 
+  
+  }
+  
+  .carreira p, .experiencia p, .educacao p {
+    color: black
+  }
+  
+  .idiomas ul, .habilidades ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  .idiomas li, .habilidades li {
+    margin-bottom: 5px; 
+  }
+  
